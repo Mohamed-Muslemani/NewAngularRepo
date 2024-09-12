@@ -13,7 +13,7 @@ import {JsonPipe, NgForOf} from "@angular/common";
 export class AppComponent {
   title= 'User Generation';
 
-  user1 : User = {id: 1, firstName: "Matt", lastName: "Haug", department: "Programming", isAdmin: false};
+  user1 : User = {id: 1, firstName: "Mohamed", lastName: "Muslemani", department: "Programming", isAdmin: false};
   user2 : User = {id: 2, firstName: "Darren", lastName: "Takakki", department: "Web Dev", isAdmin: true};
   //Can declare values either way
   userList: User[] = //any[] would have worked as well
