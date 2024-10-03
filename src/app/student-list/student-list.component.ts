@@ -4,6 +4,7 @@ import { User} from "../Shared/Models/user";
 import {NgForOf} from "@angular/common";
 import {StudentDetailComponent} from "../student-detail/student-detail.component";
 import {StudentService} from "../Services/student.service";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-student-list',
@@ -12,6 +13,7 @@ import {StudentService} from "../Services/student.service";
     NgForOf,
     NgForOf,
     StudentDetailComponent,
+    RouterLink,
   ],
   templateUrl: './student-list.component.html',
   styleUrl: './student-list.component.scss'
