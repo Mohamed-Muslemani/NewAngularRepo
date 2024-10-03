@@ -1,5 +1,5 @@
 
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {User} from "../Shared/Models/user";
 import {NgIf} from "@angular/common";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -16,7 +16,7 @@ import {StudentService} from "../Services/student.service";
 })
 export class StudentDetailComponent implements OnInit{
   //Needs to be | undef because there wont always be a student thats clicked on
-  @Input() student?: User | undefined; //The student to display
+  student: User | undefined; //The student to display
   userList: User[] = [];// to store the list of students
   currentIndex: number = 0;//to track the current index
 
